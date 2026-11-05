@@ -1,0 +1,223 @@
+Комплект 01 · UID 49189103694417 · boot 8218743531649351373 · usb
+[
+  {
+    "name": "metadata",
+    "status": "PASS",
+    "detail": {
+      "device_id": 1,
+      "device_uid": "49189103694417",
+      "boot_id": "8218743531649351373",
+      "stream_id": "13855378810938786374",
+      "config_id": 1,
+      "firmware_version": "1.0.0",
+      "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+      "ssid": "SNAR_IMU_01",
+      "ip": "192.168.4.1",
+      "protocol_version": 1,
+      "ring_capacity": 832,
+      "command_max": 4096,
+      "config": {
+        "sample_rate_hz": 100,
+        "accel_range_g": 4,
+        "gyro_range_dps": 500,
+        "dlpf": 4,
+        "smplrt_div": 9,
+        "accel_lsb_per_g": 8192,
+        "gyro_lsb_per_dps": 65.5,
+        "Kp": 2,
+        "Ki": 0,
+        "g0": 9.806650161743164,
+        "use_gyro_bias": true,
+        "R_BS": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "calibration": {
+        "schema_version": 1,
+        "device_uid": "49189103694417",
+        "method": "ON_DEVICE",
+        "axes": "S",
+        "gyro_units": "rad/s",
+        "accel_units": "m/s^2",
+        "firmware_version": "1.0.0",
+        "valid": true,
+        "gyro_bias": [
+          -0.00460287882015109,
+          0.0024326255079358816,
+          -0.012557750567793846
+        ],
+        "accel_bias": [
+          0,
+          0,
+          0
+        ],
+        "accel_scale": [
+          1,
+          1,
+          1
+        ],
+        "temperature_c": 28.729007720947266,
+        "gyro_std": [
+          0.0005389493890106678,
+          0.0004686736792791635,
+          0.0004272458318155259
+        ],
+        "gyro_n": 3000,
+        "accel_range_g": 4,
+        "gyro_range_dps": 500,
+        "face_mean": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "face_std": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "face_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "axes": "raw/calibration=S; f,w=R_BS*S; W right-handed Z up; initial relative X, NOT north",
+      "quaternion": "Hamilton qw,qx,qy,qz; B->W; AFTER sample; Rz(yaw)Ry(pitch)Rx(roll)",
+      "time": "monotonic esp_timer IRQ availability us, includes DLPF delay; NOT host receive time",
+      "mahony": "e=cross(normalize(f),R(q)'*[0,0,1]); I=clamp(I+Ki*e*dt,+/-0.5); Euler qdot=0.5*q*[0,w+Kp*e+I], then normalize",
+      "initial_state": {
+        "before_seq": 0,
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "integral": [
+          0,
+          0,
+          0
+        ],
+        "previous_t_us": "0",
+        "ready": false,
+        "still_n": 0,
+        "still_mean": [
+          0,
+          0,
+          0
+        ],
+        "still_m2": [
+          0,
+          0,
+          0
+        ]
+      },
+      "experiment": false,
+      "experiment_start_us": "0",
+      "irq_queue_capacity": 96,
+      "mpu_address": 104,
+      "mpu_bus_hz": 400000,
+      "uart_baud": 460800
+    }
+  },
+  {
+    "name": "request_id_idempotent",
+    "status": "PASS",
+    "detail": {
+      "first": {
+        "request_id": "py-b8afe84ad9e343ffacc660443c2d3642-4",
+        "ok": true
+      },
+      "second": {
+        "request_id": "py-b8afe84ad9e343ffacc660443c2d3642-4",
+        "ok": true
+      },
+      "stream_after_first": "16525657506667187027",
+      "stream_after_second": "16525657506667187027"
+    }
+  },
+  {
+    "name": "UART_noise_recovery",
+    "status": "PASS",
+    "detail": "Injected one invalid COBS frame; valid command still works"
+  },
+  {
+    "name": "diagnostics_no_reboot",
+    "status": "PASS",
+    "detail": "status loop 15.0 s"
+  },
+  {
+    "name": "sensor_pipeline",
+    "status": "PASS",
+    "detail": {
+      "sensor_error": "ESP_OK",
+      "mpu_whoami": 104,
+      "samples": 1455
+    }
+  }
+]

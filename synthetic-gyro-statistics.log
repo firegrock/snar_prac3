@@ -1,0 +1,29 @@
+{
+  "source": "Independent raw statistics, NOT a new calibration",
+  "device_uid": "0",
+  "boot_id": "0",
+  "samples": 600,
+  "axes": "S",
+  "nominal_mean_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "std_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "applied_bias_rad_s": [
+    0,
+    0,
+    0
+  ],
+  "corrected_mean_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "temperature_mean_c": 36.53,
+  "saturated_samples": 0
+}

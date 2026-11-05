@@ -1,0 +1,113 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensor.c.obj
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[7/9] Linking CXX executable snar_imu_lab.elf; Checking ioctl definition overlaps
+[8/9] Generating binary image from built executable
+esptool v5.6.0
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+[9/9] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd3970 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c690 bytes (57%) free.
+Executing action: all (aliases: build)
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja all"...
+Executing action: flash
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja flash"...
+[1/5] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd3970 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c690 bytes (57%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32 -p /dev/cu.usbserial-110 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 snar_imu_lab.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin snar_imu_lab_flashed.bin
+esptool v5.6.0
+Serial port /dev/cu.usbserial-110:
+Connecting.....
+Connected to ESP32 on /dev/cu.usbserial-110:
+Chip type:          ESP32-D0WD-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                2c:bc:bb:0d:72:50
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00001000...
+SHA digest in image updated.
+SHA digest in image updated.
+No changed sectors found, verifying if data is in flash...
+'bootloader/bootloader.bin' at 0x00001000 verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+No changed sectors found, verifying if data is in flash...
+'partition_table/partition-table.bin' at 0x00008000 verified.
+
+Writing 'snar_imu_lab.bin' at 0x00010000...
+Changed data sectors found, fast reflashing...
+Reflashing 1 changed sector at 0x00010000...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 4096 bytes to 1980...
+Writing at 0x00011000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 1.93kB/1.93kB [0s] 
+Wrote 4096 bytes (1980 compressed) at 0x00010000 in 0.1 seconds (614.4 kbit/s).
+Reflashing 208 changed sectors at 0x00014000...
+Flash will be erased from 0x00014000 to 0x000e3fff...
+Compressed 851968 bytes to 599872...
+Writing at 0x0001eb7c ╸                                2.7% 16.00kB/585.81kB [0s] 
+Writing at 0x0002605f ━╸                               5.5% 32.00kB/585.81kB [0s] 
+Writing at 0x0002eca1 ━━                               8.2% 48.00kB/585.81kB [1s] 
+Writing at 0x0003413a ━━━                             10.9% 64.00kB/585.81kB [1s] 
+Writing at 0x000394b0 ━━━━                            13.7% 80.00kB/585.81kB [2s] 
+Writing at 0x0003e8ea ━━━━╸                           16.4% 96.00kB/585.81kB [2s] 
+Writing at 0x0004415a ━━━━━╸                          19.1% 112.00kB/585.81kB [2s] 
+Writing at 0x00049693 ━━━━━━╸                         21.8% 128.00kB/585.81kB [3s] 
+Writing at 0x0004eb76 ━━━━━━━                         24.6% 144.00kB/585.81kB [3s] 
+Writing at 0x000540ae ━━━━━━━━                        27.3% 160.00kB/585.81kB [4s] 
+Writing at 0x00059b26 ━━━━━━━━━                       30.0% 176.00kB/585.81kB [4s] 
+Writing at 0x0005f67a ━━━━━━━━━╸                      32.8% 192.00kB/585.81kB [4s] 
+Writing at 0x0006502c ━━━━━━━━━━╸                     35.5% 208.00kB/585.81kB [5s] 
+Writing at 0x0006a791 ━━━━━━━━━━━                     38.2% 224.00kB/585.81kB [5s] 
+Writing at 0x000700e5 ━━━━━━━━━━━━                    41.0% 240.00kB/585.81kB [6s] 
+Writing at 0x00075d5f ━━━━━━━━━━━━━                   43.7% 256.00kB/585.81kB [6s] 
+Writing at 0x0007b180 ━━━━━━━━━━━━━╸                  46.4% 272.00kB/585.81kB [7s] 
+Writing at 0x0008040d ━━━━━━━━━━━━━━╸                 49.2% 288.00kB/585.81kB [7s] 
+Writing at 0x000854c9 ━━━━━━━━━━━━━━━╸                51.9% 304.00kB/585.81kB [7s] 
+Writing at 0x0008ae46 ━━━━━━━━━━━━━━━━                54.6% 320.00kB/585.81kB [8s] 
+Writing at 0x000904b1 ━━━━━━━━━━━━━━━━━               57.4% 336.00kB/585.81kB [8s] 
+Writing at 0x0009579d ━━━━━━━━━━━━━━━━━━              60.1% 352.00kB/585.81kB [9s] 
+Writing at 0x0009a847 ━━━━━━━━━━━━━━━━━━╸             62.8% 368.00kB/585.81kB [9s] 
+Writing at 0x0009f9cc ━━━━━━━━━━━━━━━━━━━╸            65.5% 384.00kB/585.81kB [9s] 
+Writing at 0x000a4a1e ━━━━━━━━━━━━━━━━━━━━            68.3% 400.00kB/585.81kB [10s] 
+Writing at 0x000a9d41 ━━━━━━━━━━━━━━━━━━━━━           71.0% 416.00kB/585.81kB [10s] 
+Writing at 0x000af066 ━━━━━━━━━━━━━━━━━━━━━━          73.7% 432.00kB/585.81kB [11s] 
+Writing at 0x000b4696 ━━━━━━━━━━━━━━━━━━━━━━╸         76.5% 448.00kB/585.81kB [11s] 
+Writing at 0x000b9959 ━━━━━━━━━━━━━━━━━━━━━━━╸        79.2% 464.00kB/585.81kB [12s] 
+Writing at 0x000bf16d ━━━━━━━━━━━━━━━━━━━━━━━━╸       81.9% 480.00kB/585.81kB [12s] 
+Writing at 0x000c47a1 ━━━━━━━━━━━━━━━━━━━━━━━━━       84.7% 496.00kB/585.81kB [12s] 
+Writing at 0x000c9ffc ━━━━━━━━━━━━━━━━━━━━━━━━━━      87.4% 512.00kB/585.81kB [13s] 
+Writing at 0x000cfc90 ━━━━━━━━━━━━━━━━━━━━━━━━━━━     90.1% 528.00kB/585.81kB [13s] 
+Writing at 0x000d56c6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━╸    92.9% 544.00kB/585.81kB [14s] 
+Writing at 0x000dafec ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸   95.6% 560.00kB/585.81kB [14s] 
+Writing at 0x000e01f6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   98.3% 576.00kB/585.81kB [14s] 
+Writing at 0x000e4000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 585.81kB/585.81kB [15s] 
+Wrote 851968 bytes (599872 compressed) at 0x00014000 in 15.3 seconds (444.0 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...
+Done

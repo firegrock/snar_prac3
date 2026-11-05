@@ -1,0 +1,29 @@
+{
+  "source": "Independent raw statistics, NOT a new calibration",
+  "device_uid": "49189103694417",
+  "boot_id": "266803255983812563",
+  "samples": 20399,
+  "axes": "S",
+  "nominal_mean_rad_s": [
+    -0.004675522415470472,
+    0.002509598745872173,
+    -0.012557516311291865
+  ],
+  "std_rad_s": [
+    0.000540452897655556,
+    0.0004825762812394107,
+    0.0004206244488276159
+  ],
+  "applied_bias_rad_s": [
+    0,
+    0,
+    0
+  ],
+  "corrected_mean_rad_s": [
+    -0.004675522415470472,
+    0.002509598745872173,
+    -0.012557516311291865
+  ],
+  "temperature_mean_c": 28.82568923505486,
+  "saturated_samples": 0
+}

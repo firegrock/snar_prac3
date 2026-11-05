@@ -1,0 +1,46 @@
+{
+  "unique_samples": 20399,
+  "irrecoverable_gaps": 0,
+  "irrecoverable_missing_samples": 0,
+  "orientation_invalid": 0,
+  "sensor_gap_flags": 0,
+  "time_gaps": 0,
+  "structural_errors": 0,
+  "dt_min_us": 10010,
+  "dt_max_us": 10021,
+  "dt_mean_us": 10015.690508873418,
+  "dt_histogram_100us": {
+    "10000": 20398
+  },
+  "measured_rate_hz": 99.84334071765178,
+  "completeness": "NO_DETECTED_GAPS",
+  "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+  "device_counters_first": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 1,
+    "transport_drops": 0
+  },
+  "device_counters_last": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 1,
+    "transport_drops": 0
+  },
+  "device_counter_delta_observed": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 0,
+    "transport_drops": 0
+  },
+  "malformed_event_lines": 0
+}

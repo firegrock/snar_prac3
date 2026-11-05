@@ -1,0 +1,7 @@
+{
+  "protocol": "SI/1",
+  "crc": {"name": "CRC-32/ISO-HDLC", "ascii": "123456789", "check_hex": "cbf43926"},
+  "sample_packet_hex": "53490101580001001032547698badcfeffffffffffffffff80706050403020100700000001007856341201000000000020000080ff7fffff010071fd8300acfe0000803f0000000000000000000000002000000059092a6f",
+  "expected": {"device_uid": "18364758544493064720", "boot_id": "18446744073709551615", "stream_id": "1161981756646125696", "config_id": 7, "seq": 305419896, "t_us": "9007199254740993", "raw": [-32768,32767,-1,1,-655,131,-340], "q": [1,0,0,0], "flags": 32, "delivery_flags": 1},
+  "note": "SYNTHETIC vector emitted by tests/native.c, consumed by Python and JS"
+}

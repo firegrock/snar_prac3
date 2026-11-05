@@ -1,0 +1,7 @@
+PASS scales, signed raw, units, axes, det=+1, invalid config
+PASS Mahony rest, tilt sign, yaw, q/-q, zero accel, dt gap, Ki and normalization
+PASS calibration known bias/scale, UID, NaN, negative scale, movement and wrong face
+PASS ring four cursors, overwrite GAP, resume, seq limit, concurrent writer/readers (caller lock)
+PASS C CRC check, COBS roundtrip, packet explicit endian/CRC/64-bit; vector.bin emitted
+PASS production command policy, idempotency cache, NVS version/size/CRC/UID validation
+sample bytes=48 ring bytes=39944

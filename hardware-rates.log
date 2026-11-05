@@ -1,0 +1,384 @@
+Комплект 01 · UID 49189103694417 · boot 18097064637488946042 · usb
+[
+  {
+    "rate": 50,
+    "status": {
+      "device_id": 1,
+      "device_uid": "49189103694417",
+      "boot_id": "18097064637488946042",
+      "stream_id": "6586000213020002612",
+      "config_id": 2,
+      "firmware_version": "1.0.0",
+      "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+      "ssid": "SNAR_IMU_01",
+      "ip": "192.168.4.1",
+      "protocol_version": 1,
+      "ring_capacity": 832,
+      "command_max": 4096,
+      "sensor_ok": true,
+      "sensor_error": "ESP_OK",
+      "orientation_ready": true,
+      "calibrated": false,
+      "lcd_ok": false,
+      "mpu_whoami": 104,
+      "alignment_discards": 2,
+      "lcd_address": 0,
+      "lcd_ack_count": 0,
+      "experiment": true,
+      "owner": "py-fc46c7d39a034be389e47063468e734b",
+      "nvs_status": "UNCALIBRATED: no saved coefficients",
+      "parameters": {
+        "sample_rate_hz": 50,
+        "accel_range_g": 4,
+        "gyro_range_dps": 500,
+        "dlpf": 4,
+        "Kp": 2,
+        "Ki": 0,
+        "use_gyro_bias": true
+      },
+      "rpy_deg": [
+        -0.2827858030796051,
+        -3.4981205463409424,
+        -15.335087776184082
+      ],
+      "q": [
+        0.9905841946601868,
+        -0.006516959983855486,
+        -0.02992001734673977,
+        -0.1334368735551834
+      ],
+      "temperature_c": 28.782939910888672,
+      "oldest_seq": 258,
+      "next_seq": 1090,
+      "t_us": "24159659",
+      "free_heap": 47968,
+      "minimum_free_heap": 39460,
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "transport_drops": 0,
+      "wifi_stations": 0,
+      "ws_receivers": 0,
+      "stack_high_water_bytes": {
+        "sensor": 4228,
+        "lcd": 1816,
+        "transport": 4460,
+        "commands": 4144
+      },
+      "wizard": {
+        "state": 0,
+        "face": 0,
+        "faces": 0,
+        "n": 0,
+        "target": 0,
+        "reason": ""
+      }
+    },
+    "quality": {
+      "unique_samples": 1079,
+      "irrecoverable_gaps": 0,
+      "irrecoverable_missing_samples": 0,
+      "orientation_invalid": 45,
+      "sensor_gap_flags": 0,
+      "time_gaps": 0,
+      "structural_errors": 0,
+      "dt_min_us": 20027,
+      "dt_max_us": 20035,
+      "dt_mean_us": 20031.359925788496,
+      "dt_histogram_100us": {
+        "20000": 1078
+      },
+      "measured_rate_hz": 49.92172292369395,
+      "completeness": "NO_DETECTED_GAPS",
+      "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+      "device_counters_first": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 2,
+        "transport_drops": 0
+      },
+      "device_counters_last": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 2,
+        "transport_drops": 0
+      },
+      "device_counter_delta_observed": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 0,
+        "transport_drops": 0
+      },
+      "malformed_event_lines": 0,
+      "received": 1079,
+      "recovered": 44,
+      "duplicates": 0,
+      "frame_errors": 0
+    }
+  },
+  {
+    "rate": 100,
+    "status": {
+      "device_id": 1,
+      "device_uid": "49189103694417",
+      "boot_id": "18097064637488946042",
+      "stream_id": "12288775670381313528",
+      "config_id": 3,
+      "firmware_version": "1.0.0",
+      "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+      "ssid": "SNAR_IMU_01",
+      "ip": "192.168.4.1",
+      "protocol_version": 1,
+      "ring_capacity": 832,
+      "command_max": 4096,
+      "sensor_ok": true,
+      "sensor_error": "ESP_OK",
+      "orientation_ready": true,
+      "calibrated": false,
+      "lcd_ok": false,
+      "mpu_whoami": 104,
+      "alignment_discards": 3,
+      "lcd_address": 0,
+      "lcd_ack_count": 0,
+      "experiment": true,
+      "owner": "py-fc46c7d39a034be389e47063468e734b",
+      "nvs_status": "UNCALIBRATED: no saved coefficients",
+      "parameters": {
+        "sample_rate_hz": 100,
+        "accel_range_g": 4,
+        "gyro_range_dps": 500,
+        "dlpf": 4,
+        "Kp": 2,
+        "Ki": 0,
+        "use_gyro_bias": true
+      },
+      "rpy_deg": [
+        -0.2751074433326721,
+        -3.505964517593384,
+        -15.357654571533203
+      ],
+      "q": [
+        0.990556240081787,
+        -0.006465614773333073,
+        -0.029995493590831757,
+        -0.13362981379032135
+      ],
+      "temperature_c": 28.77411651611328,
+      "oldest_seq": 1352,
+      "next_seq": 2184,
+      "t_us": "46398700",
+      "free_heap": 47968,
+      "minimum_free_heap": 39428,
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "transport_drops": 0,
+      "wifi_stations": 0,
+      "ws_receivers": 0,
+      "stack_high_water_bytes": {
+        "sensor": 4228,
+        "lcd": 1816,
+        "transport": 4460,
+        "commands": 4144
+      },
+      "wizard": {
+        "state": 0,
+        "face": 0,
+        "faces": 0,
+        "n": 0,
+        "target": 0,
+        "reason": ""
+      }
+    },
+    "quality": {
+      "unique_samples": 2148,
+      "irrecoverable_gaps": 0,
+      "irrecoverable_missing_samples": 0,
+      "orientation_invalid": 91,
+      "sensor_gap_flags": 0,
+      "time_gaps": 0,
+      "structural_errors": 0,
+      "dt_min_us": 10011,
+      "dt_max_us": 10020,
+      "dt_mean_us": 10015.678155565905,
+      "dt_histogram_100us": {
+        "10000": 2147
+      },
+      "measured_rate_hz": 99.84346386412993,
+      "completeness": "NO_DETECTED_GAPS",
+      "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+      "device_counters_first": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 3,
+        "transport_drops": 0
+      },
+      "device_counters_last": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 3,
+        "transport_drops": 0
+      },
+      "device_counter_delta_observed": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 0,
+        "transport_drops": 0
+      },
+      "malformed_event_lines": 0,
+      "received": 2148,
+      "recovered": 91,
+      "duplicates": 0,
+      "frame_errors": 0
+    }
+  },
+  {
+    "rate": 200,
+    "status": {
+      "device_id": 1,
+      "device_uid": "49189103694417",
+      "boot_id": "18097064637488946042",
+      "stream_id": "2384432631661940311",
+      "config_id": 4,
+      "firmware_version": "1.0.0",
+      "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+      "ssid": "SNAR_IMU_01",
+      "ip": "192.168.4.1",
+      "protocol_version": 1,
+      "ring_capacity": 832,
+      "command_max": 4096,
+      "sensor_ok": true,
+      "sensor_error": "ESP_OK",
+      "orientation_ready": true,
+      "calibrated": false,
+      "lcd_ok": false,
+      "mpu_whoami": 104,
+      "alignment_discards": 4,
+      "lcd_address": 0,
+      "lcd_ack_count": 0,
+      "experiment": true,
+      "owner": "py-fc46c7d39a034be389e47063468e734b",
+      "nvs_status": "UNCALIBRATED: no saved coefficients",
+      "parameters": {
+        "sample_rate_hz": 200,
+        "accel_range_g": 4,
+        "gyro_range_dps": 500,
+        "dlpf": 4,
+        "Kp": 2,
+        "Ki": 0,
+        "use_gyro_bias": true
+      },
+      "rpy_deg": [
+        -0.2794575095176697,
+        -3.4948935508728027,
+        -14.602989196777344
+      ],
+      "q": [
+        0.9914175271987915,
+        -0.006293305195868015,
+        -0.029936812818050385,
+        -0.1271047592163086
+      ],
+      "temperature_c": 28.741764068603516,
+      "oldest_seq": 3537,
+      "next_seq": 4369,
+      "t_us": "68657698",
+      "free_heap": 47968,
+      "minimum_free_heap": 39428,
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "transport_drops": 0,
+      "wifi_stations": 0,
+      "ws_receivers": 0,
+      "stack_high_water_bytes": {
+        "sensor": 4228,
+        "lcd": 1816,
+        "transport": 4460,
+        "commands": 4144
+      },
+      "wizard": {
+        "state": 0,
+        "face": 0,
+        "faces": 0,
+        "n": 0,
+        "target": 0,
+        "reason": ""
+      }
+    },
+    "quality": {
+      "unique_samples": 4256,
+      "irrecoverable_gaps": 0,
+      "irrecoverable_missing_samples": 0,
+      "orientation_invalid": 385,
+      "sensor_gap_flags": 0,
+      "time_gaps": 0,
+      "structural_errors": 0,
+      "dt_min_us": 5003,
+      "dt_max_us": 5012,
+      "dt_mean_us": 5007.835957696827,
+      "dt_histogram_100us": {
+        "5000": 4255
+      },
+      "measured_rate_hz": 199.68705214136324,
+      "completeness": "NO_DETECTED_GAPS",
+      "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+      "device_counters_first": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 4,
+        "transport_drops": 0
+      },
+      "device_counters_last": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 4,
+        "transport_drops": 0
+      },
+      "device_counter_delta_observed": {
+        "fifo_overflows": 0,
+        "irq_overflows": 0,
+        "sync_errors": 0,
+        "read_errors": 0,
+        "resyncs": 0,
+        "alignment_discards": 0,
+        "transport_drops": 0
+      },
+      "malformed_event_lines": 0,
+      "received": 4256,
+      "recovered": 174,
+      "duplicates": 0,
+      "frame_errors": 0
+    }
+  }
+]

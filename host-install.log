@@ -1,0 +1,26 @@
+Obtaining file:///Users/firegrock/Projects/SNAR_prac3/host
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pyserial==3.5 in ./.venv/lib/python3.10/site-packages (from snar-imu==1.0.0) (3.5)
+Requirement already satisfied: websocket-client==1.8.0 in ./.venv/lib/python3.10/site-packages (from snar-imu==1.0.0) (1.8.0)
+Building wheels for collected packages: snar-imu
+  Building editable for snar-imu (pyproject.toml): started
+  Building editable for snar-imu (pyproject.toml): finished with status 'done'
+  Created wheel for snar-imu: filename=snar_imu-1.0.0-0.editable-py3-none-any.whl size=3012 sha256=d70ae5b2b7b13abcf5db412c57c5cd11c96fcd9068a1861f92ed12c1e243253c
+  Stored in directory: /private/var/folders/_7/syndkphn41q1s25jz1mc4b_h0000gn/T/pip-ephem-wheel-cache-17i6hkxo/wheels/f1/38/ec/f94023c942327b45b6491b821c159c54fc29d4872b40800058
+Successfully built snar-imu
+Installing collected packages: snar-imu
+  Attempting uninstall: snar-imu
+    Found existing installation: snar-imu 1.0.0
+    Uninstalling snar-imu-1.0.0:
+      Successfully uninstalled snar-imu-1.0.0
+Successfully installed snar-imu-1.0.0
+
+[notice] A new release of pip is available: 24.3.1 -> 26.3
+[notice] To update, run: /Users/firegrock/Projects/SNAR_prac3/.venv/bin/python -m pip install --upgrade pip

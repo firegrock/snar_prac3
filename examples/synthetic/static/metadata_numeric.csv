@@ -1,0 +1,2 @@
+rate_hz,accel_lsb_g,gyro_lsb_dps,g0,Kp,Ki,use_gyro_bias,gyro_bias0,gyro_bias1,gyro_bias2,accel_bias0,accel_bias1,accel_bias2,accel_scale0,accel_scale1,accel_scale2,R_BS0,R_BS1,R_BS2,R_BS3,R_BS4,R_BS5,R_BS6,R_BS7,R_BS8,q_initial0,q_initial1,q_initial2,q_initial3,integral_initial0,integral_initial1,integral_initial2,before_seq,previous_t_us,ready,still_n,still_mean0,still_mean1,still_mean2,still_m20,still_m21,still_m22
+100,8192,65.5,9.80665,2,0,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0

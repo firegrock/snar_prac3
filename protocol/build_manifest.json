@@ -1,0 +1,27 @@
+{
+  "sdk_git_version": "v6.1-dev-8798-g4d80c1b29ae",
+  "sdk_commit": "4d80c1b29aeabc8e735ffc6e1be9bb23e95d1d5d",
+  "firmware_version": "1.0.0",
+  "device_images": {
+    "1": {
+      "path": "build-01/snar_imu_lab.bin",
+      "bytes": 867728,
+      "sha256": "d85d2e15b373c071c3b9d91b07e2f45db65f8bd66aa7fdf244ca371b8eda21f9"
+    },
+    "2": {
+      "path": "build-02/snar_imu_lab.bin",
+      "bytes": 867728,
+      "sha256": "03c67dba2f167137a5d5c15e538a6a35a6bc67798ce8115f99fb70f8742619aa"
+    },
+    "3": {
+      "path": "build-03/snar_imu_lab.bin",
+      "bytes": 867728,
+      "sha256": "66cb01798a0c971b6b98d4f84be1825d4cadc319120fc081e9a6ccdd1df7b128"
+    },
+    "4": {
+      "path": "build-04/snar_imu_lab.bin",
+      "bytes": 867728,
+      "sha256": "627a214b577919031f16156820d891ba7b7aa49f957faafaedce9d6298274dd6"
+    }
+  }
+}

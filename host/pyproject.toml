@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==70.3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snar-imu"
+version = "1.0.0"
+description = "Регистратор лабораторного ESP32 IMU"
+requires-python = ">=3.8"
+dependencies = ["pyserial==3.5", "websocket-client==1.8.0"]
+
+[project.scripts]
+snar-imu = "snar_imu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

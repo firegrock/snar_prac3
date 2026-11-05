@@ -1,0 +1,168 @@
+{
+  "device_id": 1,
+  "device_uid": "0",
+  "boot_id": "0",
+  "stream_id": "0",
+  "config_id": 1,
+  "source": "SYNTHETIC — NOT A HARDWARE MEASUREMENT",
+  "firmware_version": "SYNTHETIC",
+  "sdk_version": "NOT APPLICABLE",
+  "quaternion": "Hamilton qw,qx,qy,qz; B->W; AFTER sample",
+  "axes": "S=B, W right-handed Z up, yaw relative",
+  "time": "SYNTHETIC monotonic us",
+  "config": {
+    "sample_rate_hz": 100,
+    "accel_range_g": 4,
+    "gyro_range_dps": 500,
+    "dlpf": 4,
+    "smplrt_div": 9,
+    "accel_lsb_per_g": 8192,
+    "gyro_lsb_per_dps": 65.5,
+    "g0": 9.80665,
+    "Kp": 2,
+    "Ki": 0,
+    "use_gyro_bias": true,
+    "R_BS": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "calibration": {
+    "schema_version": 1,
+    "device_uid": "0",
+    "method": "SYNTHETIC",
+    "axes": "S",
+    "gyro_units": "rad/s",
+    "accel_units": "m/s^2",
+    "gyro_bias": [
+      0,
+      0,
+      0
+    ],
+    "accel_bias": [
+      0,
+      0,
+      0
+    ],
+    "accel_scale": [
+      1,
+      1,
+      1
+    ],
+    "temperature_c": 36.53,
+    "gyro_std": [
+      0,
+      0,
+      0
+    ],
+    "gyro_n": 0,
+    "face_mean": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "face_std": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "face_n": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "accel_range_g": 4,
+    "gyro_range_dps": 500
+  },
+  "initial_state": {
+    "before_seq": 0,
+    "q": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "integral": [
+      0,
+      0,
+      0
+    ],
+    "previous_t_us": "0",
+    "ready": true,
+    "still_n": 0,
+    "still_mean": [
+      0,
+      0,
+      0
+    ],
+    "still_m2": [
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+PASS scales, signed raw, units, axes, det=+1, invalid config
+PASS Mahony rest, tilt sign, yaw, q/-q, zero accel, dt gap, Ki and normalization
+PASS calibration known bias/scale, UID, NaN, negative scale, movement and wrong face
+PASS ring four cursors, overwrite GAP, resume, seq limit, concurrent writer/readers (caller lock)
+PASS C CRC check, COBS roundtrip, packet explicit endian/CRC/64-bit; vector.bin emitted
+PASS production command policy, idempotency cache, NVS version/size/CRC/UID validation
+sample bytes=48 ring bytes=39944
+PASS CMake rejects LAB_DEVICE_ID=5
+test_sigint_corrupt_frame_and_resume (test_cli_integration.CLIIntegration) ... ok
+test_c_vector (test_host.CodecTests) ... ok
+test_cobs_noise_crc_lengths (test_host.CodecTests) ... ok
+test_no_mutations_before_handshake (test_host.IdentityTests) ... ok
+test_pins_uid_across_reconnect (test_host.IdentityTests) ... Комплект 01 · UID 123 · boot 1 · test
+ok
+test_dedup_recovery_identity (test_host.StorageTests) ... ok
+test_gap_and_order_bounded_export (test_host.StorageTests) ... ok
+test_initial_gap_and_device_counters (test_host.StorageTests) ... ok
+test_first_frame_without_handshake_callback (test_ws_handler.HandlerRegression) ... ok
+test_lease_resume_without_reopening_link (test_ws_reconnect.TestReconnect) ... ok
+test_rpc_consumed_samples_prevent_false_disconnect (test_ws_reconnect.TestReconnect) ... ok
+test_tcp_disconnect_and_resume (test_ws_reconnect.TestReconnect) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 12.935s
+
+OK
+PASS JavaScriptCore: browser CRC / shared C vector / BigInt / signed raw / corruption
+PASS browser connection: verify identity, render MPU status, ignore stale socket, report close code, reject pending RPC
+NOT RUN C/Octave comparison: octave unavailable

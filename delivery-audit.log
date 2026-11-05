@@ -1,0 +1,3 @@
+PASS local documentation links
+PASS Python3.8 grammar; execution remains tested on3.10
+PASS four firmware SHA256 digests saved to protocol/build_manifest.json

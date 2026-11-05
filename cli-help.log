@@ -1,0 +1,12 @@
+usage: __main__.py [-h]
+                   {ports,menu,status,command,record,calibrate,export-cal,import-cal,validate,compare,cal-from-csv}
+                   ...
+
+СНАР IMU: USB/Wi-Fi регистратор (не управление Comau)
+
+positional arguments:
+  {ports,menu,status,command,record,calibrate,export-cal,import-cal,validate,compare,cal-from-csv}
+    ports               список последовательных портов, без автоподключения
+
+options:
+  -h, --help            show this help message and exit

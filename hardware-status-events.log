@@ -1,0 +1,184 @@
+Комплект 01 · UID 49189103694417 · boot 12056569225034442389 · usb
+{
+  "request_id": "py-a2712ed742aa4bccb0e0b303f03689b6-2",
+  "result": {
+    "device_id": 1,
+    "device_uid": "49189103694417",
+    "boot_id": "12056569225034442389",
+    "stream_id": "15187024442553612000",
+    "config_id": 1,
+    "firmware_version": "1.0.0",
+    "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+    "ssid": "SNAR_IMU_01",
+    "ip": "192.168.4.1",
+    "protocol_version": 1,
+    "ring_capacity": 832,
+    "command_max": 4096,
+    "sensor_ok": true,
+    "sensor_error": "ESP_OK",
+    "orientation_ready": false,
+    "calibrated": false,
+    "lcd_ok": false,
+    "lcd_address": 0,
+    "lcd_ack_count": 0,
+    "experiment": false,
+    "owner": "",
+    "nvs_status": "UNCALIBRATED: no saved coefficients",
+    "rpy_deg": null,
+    "q": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "temperature_c": null,
+    "oldest_seq": 0,
+    "next_seq": 0,
+    "t_us": "0",
+    "free_heap": 51124,
+    "minimum_free_heap": 47096,
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 31,
+    "read_errors": 0,
+    "resyncs": 31,
+    "transport_drops": 0,
+    "wifi_stations": 0,
+    "ws_receivers": 0,
+    "stack_high_water_bytes": {
+      "sensor": 4348,
+      "lcd": 800,
+      "transport": 4676,
+      "commands": 4520
+    },
+    "wizard": {
+      "state": 0,
+      "face": 0,
+      "faces": 0,
+      "n": 0,
+      "target": 0,
+      "reason": ""
+    }
+  },
+  "ok": true
+}
+{
+  "request_id": "py-a2712ed742aa4bccb0e0b303f03689b6-3",
+  "events": [
+    {
+      "id": 0,
+      "seq": 0,
+      "t_us": "22938",
+      "type": "STREAM_BOUNDARY",
+      "text": "History cleared; fetch metadata before subscribing"
+    },
+    {
+      "id": 1,
+      "seq": 0,
+      "t_us": "28852",
+      "type": "LCD_ERROR",
+      "text": "Missing/ambiguous address or I2C error"
+    },
+    {
+      "id": 2,
+      "seq": 0,
+      "t_us": "228168",
+      "type": "SENSOR_READY",
+      "text": "ESP_OK"
+    },
+    {
+      "id": 3,
+      "seq": 0,
+      "t_us": "240215",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 4,
+      "seq": 0,
+      "t_us": "299103",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 5,
+      "seq": 0,
+      "t_us": "358345",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 6,
+      "seq": 0,
+      "t_us": "417090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 7,
+      "seq": 0,
+      "t_us": "476090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 8,
+      "seq": 0,
+      "t_us": "535090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 9,
+      "seq": 0,
+      "t_us": "594090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 10,
+      "seq": 0,
+      "t_us": "653090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 11,
+      "seq": 0,
+      "t_us": "712090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 12,
+      "seq": 0,
+      "t_us": "771090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 13,
+      "seq": 0,
+      "t_us": "830090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 14,
+      "seq": 0,
+      "t_us": "889090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    },
+    {
+      "id": 15,
+      "seq": 0,
+      "t_us": "948090",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=1"
+    }
+  ],
+  "detail_unavailable": false,
+  "next_event": 16,
+  "ok": true
+}

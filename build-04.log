@@ -1,0 +1,38 @@
+[1/17] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-04/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-04/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[2/17] Building C object esp-idf/lab_core/CMakeFiles/__idf_lab_core.dir/wire.c.obj
+[3/17] No install step for 'bootloader'
+[4/17] Completed 'bootloader'
+[5/17] Building C object esp-idf/lab_core/CMakeFiles/__idf_lab_core.dir/core.c.obj
+[6/17] Linking C static library esp-idf/lab_core/liblab_core.a
+[7/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app.c.obj
+[8/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lcd.c.obj
+[9/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/commands.c.obj
+[10/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/json_model.c.obj
+[11/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensor.c.obj
+[12/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/transport.c.obj
+[13/17] Linking C static library esp-idf/main/libmain.a
+[14/17] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[15/17] Linking CXX executable snar_imu_lab.elf; Checking ioctl definition overlaps
+[16/17] Generating binary image from built executable
+esptool v5.6.0
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /Users/firegrock/Projects/SNAR_prac3/build-04/snar_imu_lab.bin
+[17/17] cd /Users/firegrock/Projects/SNAR_prac3/build-04 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-04/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-04/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd3d90 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c270 bytes (57%) free.
+Executing action: all (aliases: build)
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-04
+Executing "ninja all"...
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 4MB --flash-freq 40m 0x1000 build-04/bootloader/bootloader.bin 0x8000 build-04/partition_table/partition-table.bin 0x10000 build-04/snar_imu_lab.bin
+or from the "/Users/firegrock/Projects/SNAR_prac3/build-04" directory
+ python -m esptool --chip esp32 -b 460800 --before default-reset --after hard-reset write-flash "@flash_args"

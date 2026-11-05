@@ -1,0 +1,22 @@
+{
+  "unique_samples": 600,
+  "irrecoverable_gaps": 0,
+  "irrecoverable_missing_samples": 0,
+  "orientation_invalid": 0,
+  "sensor_gap_flags": 0,
+  "time_gaps": 0,
+  "structural_errors": 0,
+  "dt_min_us": 10000,
+  "dt_max_us": 10000,
+  "dt_mean_us": 10000.0,
+  "dt_histogram_100us": {
+    "10000": 599
+  },
+  "measured_rate_hz": 100.0,
+  "completeness": "NO_DETECTED_GAPS",
+  "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+  "received": 600,
+  "recovered": 0,
+  "duplicates": 0,
+  "frame_errors": 0
+}

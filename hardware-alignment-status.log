@@ -1,0 +1,79 @@
+Комплект 01 · UID 49189103694417 · boot 17735837546900210757 · usb
+{
+  "request_id": "py-15140cb3c1164143b21b3205e5e7e6ba-2",
+  "result": {
+    "device_id": 1,
+    "device_uid": "49189103694417",
+    "boot_id": "17735837546900210757",
+    "stream_id": "10694374109136574307",
+    "config_id": 1,
+    "firmware_version": "1.0.0",
+    "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+    "ssid": "SNAR_IMU_01",
+    "ip": "192.168.4.1",
+    "protocol_version": 1,
+    "ring_capacity": 832,
+    "command_max": 4096,
+    "sensor_ok": true,
+    "sensor_error": "ESP_OK",
+    "orientation_ready": true,
+    "calibrated": false,
+    "lcd_ok": false,
+    "mpu_whoami": 104,
+    "alignment_discards": 1,
+    "lcd_address": 0,
+    "lcd_ack_count": 0,
+    "experiment": false,
+    "owner": "",
+    "nvs_status": "UNCALIBRATED: no saved coefficients",
+    "parameters": {
+      "sample_rate_hz": 100,
+      "accel_range_g": 4,
+      "gyro_range_dps": 500,
+      "dlpf": 4,
+      "Kp": 2,
+      "Ki": 0,
+      "use_gyro_bias": true
+    },
+    "rpy_deg": [
+      -0.2736600935459137,
+      -3.5175364017486572,
+      -0.549090027809143
+    ],
+    "q": [
+      0.9995142817497253,
+      -0.0025340437423437834,
+      -0.030679594725370407,
+      -0.00486271921545267
+    ],
+    "temperature_c": 28.824115753173828,
+    "oldest_seq": 0,
+    "next_seq": 175,
+    "t_us": "2041188",
+    "free_heap": 50268,
+    "minimum_free_heap": 46996,
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "transport_drops": 0,
+    "wifi_stations": 0,
+    "ws_receivers": 0,
+    "stack_high_water_bytes": {
+      "sensor": 4276,
+      "lcd": 792,
+      "transport": 4672,
+      "commands": 4496
+    },
+    "wizard": {
+      "state": 0,
+      "face": 0,
+      "faces": 0,
+      "n": 0,
+      "target": 0,
+      "reason": ""
+    }
+  },
+  "ok": true
+}

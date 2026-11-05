@@ -1,0 +1,185 @@
+Комплект 01 · UID 49189103694417 · boot 3900634771844513558 · usb
+{
+  "request_id": "py-2d4a8798120d4784aea3b0b619f3ac6d-2",
+  "result": {
+    "device_id": 1,
+    "device_uid": "49189103694417",
+    "boot_id": "3900634771844513558",
+    "stream_id": "14091752470420488258",
+    "config_id": 1,
+    "firmware_version": "1.0.0",
+    "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+    "ssid": "SNAR_IMU_01",
+    "ip": "192.168.4.1",
+    "protocol_version": 1,
+    "ring_capacity": 832,
+    "command_max": 4096,
+    "sensor_ok": true,
+    "sensor_error": "ESP_OK",
+    "orientation_ready": false,
+    "calibrated": false,
+    "lcd_ok": false,
+    "mpu_whoami": 104,
+    "lcd_address": 0,
+    "lcd_ack_count": 0,
+    "experiment": false,
+    "owner": "",
+    "nvs_status": "UNCALIBRATED: no saved coefficients",
+    "rpy_deg": null,
+    "q": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "temperature_c": null,
+    "oldest_seq": 0,
+    "next_seq": 0,
+    "t_us": "0",
+    "free_heap": 51052,
+    "minimum_free_heap": 47080,
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 16,
+    "read_errors": 0,
+    "resyncs": 16,
+    "transport_drops": 0,
+    "wifi_stations": 0,
+    "ws_receivers": 0,
+    "stack_high_water_bytes": {
+      "sensor": 4324,
+      "lcd": 792,
+      "transport": 4676,
+      "commands": 4400
+    },
+    "wizard": {
+      "state": 0,
+      "face": 0,
+      "faces": 0,
+      "n": 0,
+      "target": 0,
+      "reason": ""
+    }
+  },
+  "ok": true
+}
+{
+  "request_id": "py-2d4a8798120d4784aea3b0b619f3ac6d-3",
+  "events": [
+    {
+      "id": 0,
+      "seq": 0,
+      "t_us": "22854",
+      "type": "STREAM_BOUNDARY",
+      "text": "History cleared; fetch metadata before subscribing"
+    },
+    {
+      "id": 1,
+      "seq": 0,
+      "t_us": "28591",
+      "type": "LCD_ERROR",
+      "text": "Missing/ambiguous address or I2C error"
+    },
+    {
+      "id": 2,
+      "seq": 0,
+      "t_us": "327050",
+      "type": "SENSOR_READY",
+      "text": "ESP_OK"
+    },
+    {
+      "id": 3,
+      "seq": 0,
+      "t_us": "389870",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 4,
+      "seq": 0,
+      "t_us": "499691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 5,
+      "seq": 0,
+      "t_us": "609691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 6,
+      "seq": 0,
+      "t_us": "719691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 7,
+      "seq": 0,
+      "t_us": "829691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 8,
+      "seq": 0,
+      "t_us": "939691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 9,
+      "seq": 0,
+      "t_us": "1049692",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 10,
+      "seq": 0,
+      "t_us": "1159691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 11,
+      "seq": 0,
+      "t_us": "1269691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 12,
+      "seq": 0,
+      "t_us": "1379703",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 13,
+      "seq": 0,
+      "t_us": "1489691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 14,
+      "seq": 0,
+      "t_us": "1599691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    },
+    {
+      "id": 15,
+      "seq": 0,
+      "t_us": "1709691",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH bytes=0 irq=6 ctrl=00 en=00 int=00"
+    }
+  ],
+  "detail_unavailable": false,
+  "next_event": 16,
+  "ok": true
+}

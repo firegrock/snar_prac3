@@ -1,0 +1,93 @@
+Комплект 01 · UID 49189103694417 · boot 3044964933526004841 · usb
+{
+  "request_id": "py-588c91911b5d4152a9c26116ea96cc89-2",
+  "result": {
+    "device_id": 1,
+    "device_uid": "49189103694417",
+    "boot_id": "3044964933526004841",
+    "stream_id": "14931750532172269486",
+    "config_id": 1,
+    "firmware_version": "1.0.0",
+    "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+    "ssid": "SNAR_IMU_01",
+    "ip": "192.168.4.1",
+    "protocol_version": 1,
+    "ring_capacity": 832,
+    "command_max": 4096,
+    "sensor_ok": false,
+    "sensor_error": "ESP_ERR_INVALID_RESPONSE",
+    "orientation_ready": false,
+    "calibrated": false,
+    "lcd_ok": false,
+    "lcd_address": 0,
+    "lcd_ack_count": 0,
+    "experiment": false,
+    "owner": "",
+    "nvs_status": "UNCALIBRATED: no saved coefficients",
+    "rpy_deg": null,
+    "q": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "temperature_c": null,
+    "oldest_seq": 0,
+    "next_seq": 0,
+    "t_us": "0",
+    "free_heap": 51112,
+    "minimum_free_heap": 47096,
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "transport_drops": 0,
+    "wifi_stations": 0,
+    "ws_receivers": 0,
+    "stack_high_water_bytes": {
+      "sensor": 4636,
+      "lcd": 800,
+      "transport": 4644,
+      "commands": 4536
+    },
+    "wizard": {
+      "state": 0,
+      "face": 0,
+      "faces": 0,
+      "n": 0,
+      "target": 0,
+      "reason": ""
+    }
+  },
+  "ok": true
+}
+{
+  "request_id": "py-588c91911b5d4152a9c26116ea96cc89-3",
+  "events": [
+    {
+      "id": 0,
+      "seq": 0,
+      "t_us": "22900",
+      "type": "STREAM_BOUNDARY",
+      "text": "History cleared; fetch metadata before subscribing"
+    },
+    {
+      "id": 1,
+      "seq": 0,
+      "t_us": "28073",
+      "type": "SENSOR_ERROR",
+      "text": "ESP_ERR_INVALID_RESPONSE"
+    },
+    {
+      "id": 2,
+      "seq": 0,
+      "t_us": "28788",
+      "type": "LCD_ERROR",
+      "text": "Missing/ambiguous address or I2C error"
+    }
+  ],
+  "detail_unavailable": false,
+  "next_event": 3,
+  "ok": true
+}

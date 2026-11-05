@@ -1,0 +1,64 @@
+Комплект 01 · UID 49189103694417 · boot 11176510611392074456 · usb
+{
+  "request_id": "py-795e61692bf8462986242a2f8fd3cd1c-2",
+  "result": {
+    "device_id": 1,
+    "device_uid": "49189103694417",
+    "boot_id": "11176510611392074456",
+    "stream_id": "16644191049063421164",
+    "config_id": 1,
+    "firmware_version": "1.0.0",
+    "sdk_version": "v6.1-dev-8798-g4d80c1b29ae",
+    "ssid": "SNAR_IMU_01",
+    "ip": "192.168.4.1",
+    "protocol_version": 1,
+    "ring_capacity": 832,
+    "command_max": 4096,
+    "sensor_ok": true,
+    "sensor_error": "ESP_OK",
+    "orientation_ready": false,
+    "calibrated": false,
+    "lcd_ok": false,
+    "lcd_address": 0,
+    "lcd_ack_count": 0,
+    "experiment": false,
+    "owner": "",
+    "nvs_status": "UNCALIBRATED: no saved coefficients",
+    "rpy_deg": null,
+    "q": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "temperature_c": null,
+    "oldest_seq": 0,
+    "next_seq": 0,
+    "t_us": "0",
+    "free_heap": 49252,
+    "minimum_free_heap": 45236,
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 31,
+    "read_errors": 0,
+    "resyncs": 31,
+    "transport_drops": 0,
+    "wifi_stations": 0,
+    "ws_receivers": 0,
+    "stack_high_water_bytes": {
+      "sensor": 4348,
+      "lcd": 784,
+      "transport": 4672,
+      "commands": 4520
+    },
+    "wizard": {
+      "state": 0,
+      "face": 0,
+      "faces": 0,
+      "n": 0,
+      "target": 0,
+      "reason": ""
+    }
+  },
+  "ok": true
+}

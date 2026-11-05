@@ -1,0 +1,121 @@
+Комплект 01 · UID 49189103694417 · boot 6770624655944267128 · usb
+{
+  "request_id": "py-4ed8715194e04f2285aa21cdd57298a5-2",
+  "events": [
+    {
+      "id": 0,
+      "seq": 0,
+      "t_us": "43725",
+      "type": "STREAM_BOUNDARY",
+      "text": "History cleared; fetch metadata before subscribing"
+    },
+    {
+      "id": 1,
+      "seq": 0,
+      "t_us": "49899",
+      "type": "LCD_ERROR",
+      "text": "Missing/ambiguous address or I2C error"
+    },
+    {
+      "id": 2,
+      "seq": 0,
+      "t_us": "250513",
+      "type": "SENSOR_READY",
+      "text": "ESP_OK"
+    },
+    {
+      "id": 3,
+      "seq": 0,
+      "t_us": "262384",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 4,
+      "seq": 0,
+      "t_us": "321341",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 5,
+      "seq": 0,
+      "t_us": "380376",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 6,
+      "seq": 0,
+      "t_us": "439333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 7,
+      "seq": 0,
+      "t_us": "498333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 8,
+      "seq": 0,
+      "t_us": "557337",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 9,
+      "seq": 0,
+      "t_us": "616333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 10,
+      "seq": 0,
+      "t_us": "675333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 11,
+      "seq": 0,
+      "t_us": "734333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 12,
+      "seq": 0,
+      "t_us": "793333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 13,
+      "seq": 0,
+      "t_us": "852337",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 14,
+      "seq": 0,
+      "t_us": "911333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    },
+    {
+      "id": 15,
+      "seq": 0,
+      "t_us": "970333",
+      "type": "SENSOR_GAP",
+      "text": "FIFO_TIMESTAMP_MISMATCH"
+    }
+  ],
+  "detail_unavailable": false,
+  "next_event": 16,
+  "ok": true
+}

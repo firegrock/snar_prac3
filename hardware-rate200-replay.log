@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "samples": 4256,
+  "max_q_sign_invariant_norm": 1.2738368574620164e-07,
+  "tolerance": 0.0002,
+  "source": "Production C replay; not Octave, not sensor accuracy"
+}

@@ -1,0 +1,52 @@
+Комплект 01 · UID 49189103694417 · boot 949963623870563514 · usb
+Файловая запись: runs/hardware_100hz_final_10min. Ctrl+C — завершить. Метки: --interactive и 'm текст'.
+{
+  "unique_samples": 59922,
+  "irrecoverable_gaps": 0,
+  "irrecoverable_missing_samples": 0,
+  "orientation_invalid": 0,
+  "sensor_gap_flags": 0,
+  "time_gaps": 0,
+  "structural_errors": 0,
+  "dt_min_us": 10008,
+  "dt_max_us": 10023,
+  "dt_mean_us": 10015.661754643614,
+  "dt_histogram_100us": {
+    "10000": 59921
+  },
+  "measured_rate_hz": 99.84362736055506,
+  "completeness": "NO_DETECTED_GAPS",
+  "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+  "device_counters_first": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 1,
+    "transport_drops": 0
+  },
+  "device_counters_last": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 1,
+    "transport_drops": 0
+  },
+  "device_counter_delta_observed": {
+    "fifo_overflows": 0,
+    "irq_overflows": 0,
+    "sync_errors": 0,
+    "read_errors": 0,
+    "resyncs": 0,
+    "alignment_discards": 0,
+    "transport_drops": 0
+  },
+  "malformed_event_lines": 0,
+  "received": 59922,
+  "recovered": 12,
+  "duplicates": 0,
+  "frame_errors": 138
+}

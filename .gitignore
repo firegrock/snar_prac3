@@ -1,0 +1,10 @@
+build*/
+sdkconfig
+sdkconfig.old
+.venv/
+__pycache__/
+*.egg-info/
+*.pyc
+backups/*.bin
+runs/
+tests/out/

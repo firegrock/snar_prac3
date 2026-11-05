@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.22)
+set(SDKCONFIG "${CMAKE_BINARY_DIR}/sdkconfig" CACHE FILEPATH "Per-build SDK configuration")
+set(LAB_DEVICE_ID 1 CACHE STRING "Номер комплекта, 1..4")
+if(NOT LAB_DEVICE_ID MATCHES "^[1-4]$")
+  message(FATAL_ERROR "LAB_DEVICE_ID must be 1..4")
+endif()
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(snar_imu_lab VERSION 1.0.0)

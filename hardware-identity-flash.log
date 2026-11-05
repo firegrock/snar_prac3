@@ -1,0 +1,130 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[2/14] No install step for 'bootloader'
+[3/14] Completed 'bootloader'
+[4/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app.c.obj
+[5/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lcd.c.obj
+[6/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sensor.c.obj
+[7/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/json_model.c.obj
+[8/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/commands.c.obj
+[9/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/transport.c.obj
+[10/14] Linking C static library esp-idf/main/libmain.a
+[11/14] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: /Users/firegrock/esp/esp-idf/components/bootloader/Kconfig.projbuild:383: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/bootloader/Kconfig.projbuild:423: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/common/Kconfig.in:192: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/host/bluedroid/Kconfig.in:68: Choice symbol BT_ENC_KEY_SIZE_CTRL_STD (member of BT_ENC_KEY_SIZE_CTRL_ENABLED choice) is defined with a warning, which has no effect for choice symbols.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/host/bluedroid/Kconfig.in:74: Choice symbol BT_ENC_KEY_SIZE_CTRL_VSC (member of BT_ENC_KEY_SIZE_CTRL_ENABLED choice) is defined with a warning, which has no effect for choice symbols.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/host/bluedroid/Kconfig.in:81: Choice symbol BT_ENC_KEY_SIZE_CTRL_NONE (member of BT_ENC_KEY_SIZE_CTRL_ENABLED choice) is defined with a warning, which has no effect for choice symbols.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/host/nimble/Kconfig.in:1159: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/bt/controller/esp32/Kconfig.in:573: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/esp_hw_support/./lowpower/port/esp32p4/Kconfig.p4_rev3_mspi_workaround:6: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/esp_mm/Kconfig:20: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/esp_system/./port/soc/esp32/Kconfig.memory:24: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /Users/firegrock/esp/esp-idf/components/openthread/Kconfig:116: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+Skipping linker fragment parsing, fragment files unchanged
+[12/14] Linking CXX executable snar_imu_lab.elf; Checking ioctl definition overlaps
+[13/14] Generating binary image from built executable
+esptool v5.6.0
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+[14/14] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd39d0 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c630 bytes (57%) free.
+Executing action: all (aliases: build)
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja all"...
+Executing action: flash
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja flash"...
+[1/5] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd39d0 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c630 bytes (57%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32 -p /dev/cu.usbserial-110 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 snar_imu_lab.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin snar_imu_lab_flashed.bin
+esptool v5.6.0
+Serial port /dev/cu.usbserial-110:
+Connecting....
+Connected to ESP32 on /dev/cu.usbserial-110:
+Chip type:          ESP32-D0WD-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                2c:bc:bb:0d:72:50
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00001000...
+SHA digest in image updated.
+SHA digest in image updated.
+No changed sectors found, verifying if data is in flash...
+'bootloader/bootloader.bin' at 0x00001000 verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+No changed sectors found, verifying if data is in flash...
+'partition_table/partition-table.bin' at 0x00008000 verified.
+
+Writing 'snar_imu_lab.bin' at 0x00010000...
+Changed data sectors found, fast reflashing...
+Reflashing 1 changed sector at 0x00010000...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 4096 bytes to 1977...
+Writing at 0x00011000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 1.93kB/1.93kB [0s] 
+Wrote 4096 bytes (1977 compressed) at 0x00010000 in 0.1 seconds (615.0 kbit/s).
+Reflashing 208 changed sectors at 0x00014000...
+Flash will be erased from 0x00014000 to 0x000e3fff...
+Compressed 851968 bytes to 600046...
+Writing at 0x0001eb72 ╸                                2.7% 16.00kB/585.98kB [0s] 
+Writing at 0x00026054 ━╸                               5.5% 32.00kB/585.98kB [0s] 
+Writing at 0x0002eca1 ━━                               8.2% 48.00kB/585.98kB [1s] 
+Writing at 0x0003413d ━━━                             10.9% 64.00kB/585.98kB [1s] 
+Writing at 0x000394b4 ━━━━                            13.7% 80.00kB/585.98kB [2s] 
+Writing at 0x0003e8f8 ━━━━╸                           16.4% 96.00kB/585.98kB [2s] 
+Writing at 0x0004414a ━━━━━╸                          19.1% 112.00kB/585.98kB [2s] 
+Writing at 0x00049626 ━━━━━━╸                         21.8% 128.00kB/585.98kB [3s] 
+Writing at 0x0004eb34 ━━━━━━━                         24.6% 144.00kB/585.98kB [3s] 
+Writing at 0x0005402d ━━━━━━━━                        27.3% 160.00kB/585.98kB [4s] 
+Writing at 0x00059ac3 ━━━━━━━━━                       30.0% 176.00kB/585.98kB [4s] 
+Writing at 0x0005f60e ━━━━━━━━━╸                      32.8% 192.00kB/585.98kB [4s] 
+Writing at 0x00064fda ━━━━━━━━━━╸                     35.5% 208.00kB/585.98kB [5s] 
+Writing at 0x0006a72a ━━━━━━━━━━━                     38.2% 224.00kB/585.98kB [5s] 
+Writing at 0x00070074 ━━━━━━━━━━━━                    41.0% 240.00kB/585.98kB [6s] 
+Writing at 0x00075d0f ━━━━━━━━━━━━━                   43.7% 256.00kB/585.98kB [6s] 
+Writing at 0x0007b13a ━━━━━━━━━━━━━╸                  46.4% 272.00kB/585.98kB [7s] 
+Writing at 0x000803c5 ━━━━━━━━━━━━━━╸                 49.1% 288.00kB/585.98kB [7s] 
+Writing at 0x00085468 ━━━━━━━━━━━━━━━╸                51.9% 304.00kB/585.98kB [7s] 
+Writing at 0x0008adce ━━━━━━━━━━━━━━━━                54.6% 320.00kB/585.98kB [8s] 
+Writing at 0x0009044b ━━━━━━━━━━━━━━━━━               57.3% 336.00kB/585.98kB [8s] 
+Writing at 0x00095741 ━━━━━━━━━━━━━━━━━━              60.1% 352.00kB/585.98kB [9s] 
+Writing at 0x0009a7f0 ━━━━━━━━━━━━━━━━━━╸             62.8% 368.00kB/585.98kB [9s] 
+Writing at 0x0009f97b ━━━━━━━━━━━━━━━━━━━╸            65.5% 384.00kB/585.98kB [9s] 
+Writing at 0x000a49ae ━━━━━━━━━━━━━━━━━━━━            68.3% 400.00kB/585.98kB [10s] 
+Writing at 0x000a9cd1 ━━━━━━━━━━━━━━━━━━━━━           71.0% 416.00kB/585.98kB [10s] 
+Writing at 0x000af000 ━━━━━━━━━━━━━━━━━━━━━━          73.7% 432.00kB/585.98kB [11s] 
+Writing at 0x000b4637 ━━━━━━━━━━━━━━━━━━━━━━╸         76.5% 448.00kB/585.98kB [11s] 
+Writing at 0x000b98eb ━━━━━━━━━━━━━━━━━━━━━━━╸        79.2% 464.00kB/585.98kB [12s] 
+Writing at 0x000bf0f4 ━━━━━━━━━━━━━━━━━━━━━━━━╸       81.9% 480.00kB/585.98kB [12s] 
+Writing at 0x000c4712 ━━━━━━━━━━━━━━━━━━━━━━━━━       84.6% 496.00kB/585.98kB [12s] 
+Writing at 0x000c9f6c ━━━━━━━━━━━━━━━━━━━━━━━━━━      87.4% 512.00kB/585.98kB [13s] 
+Writing at 0x000cfc29 ━━━━━━━━━━━━━━━━━━━━━━━━━━━     90.1% 528.00kB/585.98kB [13s] 
+Writing at 0x000d564f ━━━━━━━━━━━━━━━━━━━━━━━━━━━╸    92.8% 544.00kB/585.98kB [14s] 
+Writing at 0x000daf78 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸   95.6% 560.00kB/585.98kB [14s] 
+Writing at 0x000e0184 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   98.3% 576.00kB/585.98kB [14s] 
+Writing at 0x000e4000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 585.98kB/585.98kB [15s] 
+Wrote 851968 bytes (600046 compressed) at 0x00014000 in 15.4 seconds (443.7 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...
+Done

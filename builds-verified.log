@@ -1,0 +1,4 @@
+PASS build-01: compile definition, websocket, socket budget, clean UART, image fits
+PASS build-02: compile definition, websocket, socket budget, clean UART, image fits
+PASS build-03: compile definition, websocket, socket budget, clean UART, image fits
+PASS build-04: compile definition, websocket, socket budget, clean UART, image fits

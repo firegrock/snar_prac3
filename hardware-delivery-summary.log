@@ -1,0 +1,5 @@
+HEAP 45404 45388 {'sensor': 4276, 'lcd': 1832, 'transport': 4424, 'commands': 4144}
+DELIVERY [('metadata', 'PASS'), ('request_id_idempotent', 'PASS'), ('UART_noise_recovery', 'PASS'), ('diagnostics_no_reboot', 'PASS'), ('sensor_pipeline', 'PASS')]
+STATE {'sample_rate_hz': 100, 'accel_range_g': 4, 'gyro_range_dps': 500, 'dlpf': 4, 'Kp': 2, 'Ki': 0, 'use_gyro_bias': True} LOADED {'free_min': 45428, 'free_max': 45684, 'minimum_free_heap': 37700}
+RATES [(50, 49.92172292369395, 20027, 20035), (100, 99.84346386412993, 10011, 10020), (200, 199.68705214136324, 5003, 5012)]
+SAMPLE_SPAN_S 600.127783

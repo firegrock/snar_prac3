@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "immutable_records_compared": 165,
+  "live_lag_records": 5,
+  "gap_events": [
+    {
+      "event": "GAP",
+      "from_seq": 359,
+      "oldest_seq": 612,
+      "next_seq": 1444,
+      "reason": "RAM history overwritten; old event detail may be unavailable"
+    }
+  ],
+  "quality": {
+    "unique_samples": 1600,
+    "irrecoverable_gaps": 1,
+    "irrecoverable_missing_samples": 253,
+    "orientation_invalid": 359,
+    "sensor_gap_flags": 1,
+    "time_gaps": 1,
+    "structural_errors": 0,
+    "dt_min_us": 5004,
+    "dt_max_us": 5012,
+    "dt_mean_us": 5007.827909887359,
+    "dt_histogram_100us": {
+      "5000": 1598
+    },
+    "measured_rate_hz": 172.40825325532444,
+    "completeness": "GAPS",
+    "note": "seq continuity does not prove no pre-record sensor loss; inspect events and device counters",
+    "device_counters_first": {
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "alignment_discards": 2,
+      "transport_drops": 0
+    },
+    "device_counters_last": {
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "alignment_discards": 2,
+      "transport_drops": 0
+    },
+    "device_counter_delta_observed": {
+      "fifo_overflows": 0,
+      "irq_overflows": 0,
+      "sync_errors": 0,
+      "read_errors": 0,
+      "resyncs": 0,
+      "alignment_discards": 0,
+      "transport_drops": 0
+    },
+    "malformed_event_lines": 0,
+    "received": 1765,
+    "recovered": 927,
+    "duplicates": 165,
+    "frame_errors": 0
+  }
+}

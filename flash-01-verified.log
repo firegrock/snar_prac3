@@ -1,0 +1,103 @@
+Adding "flash"'s dependency "all" to list of commands with default set of options.
+[1/4] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd3ac0 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c540 bytes (57%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
+Executing action: all (aliases: build)
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja all"...
+Executing action: flash
+Running ninja in directory /Users/firegrock/Projects/SNAR_prac3/build-01
+Executing "ninja flash"...
+[1/5] cd /Users/firegrock/Projects/SNAR_prac3/build-01 && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/firegrock/Projects/SNAR_prac3/build-01/partition_table/partition-table.bin /Users/firegrock/Projects/SNAR_prac3/build-01/snar_imu_lab.bin
+snar_imu_lab.bin binary size 0xd3ac0 bytes. Smallest app partition is 0x1f0000 bytes. 0x11c540 bytes (57%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader && /Users/firegrock/.espressif/python_env/idf6.2_py3.11_env/bin/python /Users/firegrock/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/firegrock/Projects/SNAR_prac3/build-01/bootloader/bootloader.bin
+Bootloader binary size 0x47c0 bytes. 0x2840 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32 -p /dev/cu.usbserial-110 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 snar_imu_lab.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin snar_imu_lab_flashed.bin
+esptool v5.6.0
+Serial port /dev/cu.usbserial-110:
+Connecting....
+Connected to ESP32 on /dev/cu.usbserial-110:
+Chip type:          ESP32-D0WD-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                2c:bc:bb:0d:72:50
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00001000...
+SHA digest in image updated.
+SHA digest in image updated.
+No changed sectors found, verifying if data is in flash...
+'bootloader/bootloader.bin' at 0x00001000 verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+No changed sectors found, verifying if data is in flash...
+'partition_table/partition-table.bin' at 0x00008000 verified.
+
+Writing 'snar_imu_lab.bin' at 0x00010000...
+Changed data sectors found, fast reflashing...
+Reflashing 1 changed sector at 0x00010000...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 4096 bytes to 1978...
+Writing at 0x00011000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 1.93kB/1.93kB [0s] 
+Wrote 4096 bytes (1978 compressed) at 0x00010000 in 0.1 seconds (615.1 kbit/s).
+Reflashing 208 changed sectors at 0x00014000...
+Flash will be erased from 0x00014000 to 0x000e3fff...
+Compressed 851968 bytes to 600144...
+Writing at 0x0001eb85 ╸                                2.7% 16.00kB/586.08kB [0s] 
+Writing at 0x00026067 ━╸                               5.5% 32.00kB/586.08kB [0s] 
+Writing at 0x0002ecab ━━                               8.2% 48.00kB/586.08kB [1s] 
+Writing at 0x00034159 ━━━                             10.9% 64.00kB/586.08kB [1s] 
+Writing at 0x000394d0 ━━━━                            13.7% 80.00kB/586.08kB [2s] 
+Writing at 0x0003e937 ━━━━╸                           16.4% 96.00kB/586.08kB [2s] 
+Writing at 0x00044188 ━━━━━╸                          19.1% 112.00kB/586.08kB [2s] 
+Writing at 0x000496b9 ━━━━━━╸                         21.8% 128.00kB/586.08kB [3s] 
+Writing at 0x0004ebab ━━━━━━━                         24.6% 144.00kB/586.08kB [3s] 
+Writing at 0x00054120 ━━━━━━━━                        27.3% 160.00kB/586.08kB [4s] 
+Writing at 0x00059b79 ━━━━━━━━━                       30.0% 176.00kB/586.08kB [4s] 
+Writing at 0x0005f6f0 ━━━━━━━━━╸                      32.8% 192.00kB/586.08kB [4s] 
+Writing at 0x000650b5 ━━━━━━━━━━╸                     35.5% 208.00kB/586.08kB [5s] 
+Writing at 0x0006a7e3 ━━━━━━━━━━━                     38.2% 224.00kB/586.08kB [5s] 
+Writing at 0x00070180 ━━━━━━━━━━━━                    41.0% 240.00kB/586.08kB [6s] 
+Writing at 0x00075dbf ━━━━━━━━━━━━━                   43.7% 256.00kB/586.08kB [6s] 
+Writing at 0x0007b19c ━━━━━━━━━━━━━╸                  46.4% 272.00kB/586.08kB [7s] 
+Writing at 0x0008040e ━━━━━━━━━━━━━━╸                 49.1% 288.00kB/586.08kB [7s] 
+Writing at 0x000854d9 ━━━━━━━━━━━━━━━╸                51.9% 304.00kB/586.08kB [7s] 
+Writing at 0x0008af03 ━━━━━━━━━━━━━━━━                54.6% 320.00kB/586.08kB [8s] 
+Writing at 0x000904dd ━━━━━━━━━━━━━━━━━               57.3% 336.00kB/586.08kB [8s] 
+Writing at 0x000957cd ━━━━━━━━━━━━━━━━━━              60.1% 352.00kB/586.08kB [9s] 
+Writing at 0x0009a88a ━━━━━━━━━━━━━━━━━━╸             62.8% 368.00kB/586.08kB [9s] 
+Writing at 0x0009fa0c ━━━━━━━━━━━━━━━━━━━╸            65.5% 384.00kB/586.08kB [9s] 
+Writing at 0x000a4a42 ━━━━━━━━━━━━━━━━━━━━            68.3% 400.00kB/586.08kB [10s] 
+Writing at 0x000a9d74 ━━━━━━━━━━━━━━━━━━━━━           71.0% 416.00kB/586.08kB [10s] 
+Writing at 0x000af09a ━━━━━━━━━━━━━━━━━━━━━━          73.7% 432.00kB/586.08kB [11s] 
+Writing at 0x000b46c2 ━━━━━━━━━━━━━━━━━━━━━━╸         76.4% 448.00kB/586.08kB [11s] 
+Writing at 0x000b997b ━━━━━━━━━━━━━━━━━━━━━━━╸        79.2% 464.00kB/586.08kB [11s] 
+Writing at 0x000bf17d ━━━━━━━━━━━━━━━━━━━━━━━━╸       81.9% 480.00kB/586.08kB [12s] 
+Writing at 0x000c4792 ━━━━━━━━━━━━━━━━━━━━━━━━━       84.6% 496.00kB/586.08kB [12s] 
+Writing at 0x000c9fef ━━━━━━━━━━━━━━━━━━━━━━━━━━      87.4% 512.00kB/586.08kB [13s] 
+Writing at 0x000cfca5 ━━━━━━━━━━━━━━━━━━━━━━━━━━━     90.1% 528.00kB/586.08kB [13s] 
+Writing at 0x000d56cd ━━━━━━━━━━━━━━━━━━━━━━━━━━━╸    92.8% 544.00kB/586.08kB [14s] 
+Writing at 0x000dafe8 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸   95.6% 560.00kB/586.08kB [14s] 
+Writing at 0x000e01ed ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   98.3% 576.00kB/586.08kB [14s] 
+Writing at 0x000e4000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% 586.08kB/586.08kB [15s] 
+Wrote 851968 bytes (600144 compressed) at 0x00014000 in 15.3 seconds (445.6 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...
+Done
