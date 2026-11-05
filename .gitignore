@@ -8,3 +8,4 @@ __pycache__/
 backups/*.bin
 runs/
 tests/out/
+*.log
